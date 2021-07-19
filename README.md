@@ -1,4 +1,4 @@
-# sensors_example
+# Snake with Flutter - A sensors_example
 
 Demonstrates how to use the sensors plugin.
 
