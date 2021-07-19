@@ -1,0 +1,121 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+MERGED from [:sensors] C:\Users\pdela\dev\Snake-Game-Flutter\build\sensors\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\12d57cf6ce4281a1db6f8af892482b1e\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\592bb33488887076ec8dad5b711a6254\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\6a44a3d4e6ab96573892c271da67cfec\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\3051274898425b0fa09a9437d32670a2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\44d0cd4def8e38bd881cc35d06c644d3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\0766521e0c7295b26ee582e62c8a2a3a\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\4538823ec75fd54d6893afdc8d6b4cc0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\be3150cf17c26531201ac7a74ea0d544\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\93a30381c9f63b836dd9597106a50870\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\a3bdc05af0583f16815941641137f6bf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\1cd1fd80829797f05ba880004b9e8197\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\058a9cb1b2123fd55090a3a09be63f84\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+	package
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:2:5-48
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:1-19:12
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:6:5-18:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\1cd1fd80829797f05ba880004b9e8197\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\1cd1fd80829797f05ba880004b9e8197\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:6:67-98
+	android:icon
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:6:99-133
+	android:name
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:6:18-66
+activity#io.flutter.plugins.sensorsexample.MainActivity
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:7:9-17:20
+	android:launchMode
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:8:19-49
+	android:hardwareAccelerated
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:11:19-53
+	android:windowSoftInputMode
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:12:19-61
+	android:configChanges
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:10:19-112
+	android:theme
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:9:19-72
+	android:name
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:7:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:14:17-68
+	android:name
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml:15:27-74
+uses-sdk
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+MERGED from [:sensors] C:\Users\pdela\dev\Snake-Game-Flutter\build\sensors\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sensors] C:\Users\pdela\dev\Snake-Game-Flutter\build\sensors\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\12d57cf6ce4281a1db6f8af892482b1e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\12d57cf6ce4281a1db6f8af892482b1e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\592bb33488887076ec8dad5b711a6254\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\592bb33488887076ec8dad5b711a6254\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\6a44a3d4e6ab96573892c271da67cfec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\6a44a3d4e6ab96573892c271da67cfec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\3051274898425b0fa09a9437d32670a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\3051274898425b0fa09a9437d32670a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\44d0cd4def8e38bd881cc35d06c644d3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\44d0cd4def8e38bd881cc35d06c644d3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\eca0e840bf2cc0aa7d4b220e5d25146e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\0766521e0c7295b26ee582e62c8a2a3a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.2.0.aar\0766521e0c7295b26ee582e62c8a2a3a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\4538823ec75fd54d6893afdc8d6b4cc0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\4538823ec75fd54d6893afdc8d6b4cc0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\be3150cf17c26531201ac7a74ea0d544\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\be3150cf17c26531201ac7a74ea0d544\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\93a30381c9f63b836dd9597106a50870\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\93a30381c9f63b836dd9597106a50870\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\a3bdc05af0583f16815941641137f6bf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\a3bdc05af0583f16815941641137f6bf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\1cd1fd80829797f05ba880004b9e8197\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\1cd1fd80829797f05ba880004b9e8197\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\058a9cb1b2123fd55090a3a09be63f84\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pdela\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\058a9cb1b2123fd55090a3a09be63f84\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pdela\dev\Snake-Game-Flutter\android\app\src\main\AndroidManifest.xml
