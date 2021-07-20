@@ -1,13 +1,16 @@
-# Flutter_SnakeGame_FlutterWeb
-Snake game which runs both on mobile and web using same flutter code.
+# fluttersnaleapp
 
-### If you liked it or if it useful to you in anyway please do click STAR.
+A new Flutter project.
 
-## Snake Game Mobile Slow version
-![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/slow_duration.gif)
+## Getting Started
 
-## Snake game in Mobile Fast Version
-![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/speed.gif)
+This project is a starting point for a Flutter application.
 
-## Snake Game in Flutter Web
-![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/web.gif)
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
