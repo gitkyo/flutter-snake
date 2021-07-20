@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\Users\pdela\flutterSDK\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\pdela\dev\Flutter_SnakeGame_FlutterWeb\snake_game"
+export "FLUTTER_APPLICATION_PATH=C:\Users\pdela\dev\flutter-snake\snake_game"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"

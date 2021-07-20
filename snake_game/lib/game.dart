@@ -15,8 +15,8 @@ class Game extends StatefulWidget {
 
 class _GameState extends State<Game> {
   var snakePosition;
-  Point newPointPosition;
-  Timer timer;
+  late Point newPointPosition;
+  late Timer timer;
   Direction _direction = Direction.UP;
   var gameState = GameState.START;
   int score = 0;
@@ -208,7 +208,7 @@ class _GameState extends State<Game> {
         break;
 
       case GameState.RUNNING:
-        List<Positioned> snakePiecesWithNewPoints = List();
+        List<Positioned> snakePiecesWithNewPoints = [];
         snakePosition.forEach(
           (i) {
             snakePiecesWithNewPoints.add(

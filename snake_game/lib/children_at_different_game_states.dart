@@ -34,8 +34,8 @@ final Widget newSnakePointInGame = Container(
 
 //class which gives the snake HEAD
 class Point {
-  double x;
-  double y;
+  late double x;
+  late double y;
 
   Point(double x, double y) {
     this.x = x;
