@@ -1,4 +1,0 @@
-#Mon Jul 19 12:22:09 MUT 2021
-base.0=C\:\\Users\\pdela\\dev\\Snake-Game-Flutter\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-renamed.0=classes.dex
-path.0=classes.dex

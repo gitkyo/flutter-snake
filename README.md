@@ -1,8 +1,13 @@
-# Snake with Flutter - A sensors_example
+# Flutter_SnakeGame_FlutterWeb
+Snake game which runs both on mobile and web using same flutter code.
 
-Demonstrates how to use the sensors plugin.
+### If you liked it or if it useful to you in anyway please do click STAR.
 
-## Getting Started
+## Snake Game Mobile Slow version
+![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/slow_duration.gif)
 
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+## Snake game in Mobile Fast Version
+![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/speed.gif)
+
+## Snake Game in Flutter Web
+![grab-landing-page](https://github.com/sur950/Flutter_SnakeGame_FlutterWeb/blob/master/web.gif)
