@@ -117,81 +117,54 @@ class _GameState extends State<Game> {
                       style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),
                   ),
-                  Column(
-                    children: [
-                      Row(children: [
-                        Container(width: 50, height: 50),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                              padding: MaterialStateProperty.all(
-                                  EdgeInsets.all(20.0)),
-                              backgroundColor:
-                                  MaterialStateProperty.all(Colors.blue[600]),
-                              elevation: MaterialStateProperty.all(5.0)),
-                          onPressed: () {
-                            setState(() {
-                              _direction = Direction.UP;
-                            });
-                          },
-                          child: Icon(Icons.keyboard_arrow_up),
-                        ),
-                        Container(width: 50, height: 50)
-                      ]),
-                      Row(
-                        children: [
-                          ElevatedButton(
-                            style: ButtonStyle(
-                                padding: MaterialStateProperty.all(
-                                    EdgeInsets.all(20.0)),
-                                backgroundColor:
-                                    MaterialStateProperty.all(Colors.blue[600]),
-                                elevation: MaterialStateProperty.all(5.0)),
-                            onPressed: () {
-                              setState(() {
-                                _direction = Direction.LEFT;
-                              });
-                            },
-                            child: Icon(Icons.keyboard_arrow_left),
-                          ),
-                          Container(
-                            width: 50,
-                            height: 50,
-                          ),
-                          ElevatedButton(
-                            style: ButtonStyle(
-                                padding: MaterialStateProperty.all(
-                                    EdgeInsets.all(20.0)),
-                                backgroundColor:
-                                    MaterialStateProperty.all(Colors.blue[600]),
-                                elevation: MaterialStateProperty.all(5.0)),
-                            onPressed: () {
-                              setState(() {
-                                _direction = Direction.RIGHT;
-                              });
-                            },
-                            child: Icon(Icons.keyboard_arrow_right),
-                          ),
-                        ],
+                  GestureDetector(
+                    onPanUpdate: (details){
+                      if (details.delta.dx < 0) {
+                        setState(() {
+                          _direction = Direction.LEFT;
+                        });
+                      }
+                      if (details.delta.dx > 0) {
+                        setState(() {
+                          _direction = Direction.RIGHT;
+                        });
+                      }
+                      if (details.delta.dy < 0) {
+                        setState(() {
+                          _direction = Direction.UP;
+                        });
+                      }
+                      if (details.delta.dy > 0) {
+                        setState(() {
+                          _direction = Direction.DOWN;
+                        });
+                      }
+                    },
+                    child: Container(
+                      height: 300,
+                      width: 300,
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Swipe to move", style: TextStyle(fontSize: 20.0, color: Colors.white),),
+                            Image.asset("assets/arrows.png", width: 30.0, height: 30.0)
+                          ]
+                        )
                       ),
-                      Row(children: [
-                        Container(width: 50, height: 50),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                              padding: MaterialStateProperty.all(
-                                  EdgeInsets.all(20.0)),
-                              backgroundColor:
-                                  MaterialStateProperty.all(Colors.blue[600]),
-                              elevation: MaterialStateProperty.all(5.0)),
-                          onPressed: () {
-                            setState(() {
-                              _direction = Direction.DOWN;
-                            });
-                          },
-                          child: Icon(Icons.keyboard_arrow_down),
-                        ),
-                        Container(width: 50, height: 50)
-                      ]),
-                    ],
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 1.0),
+                        borderRadius: BorderRadius.circular(5.0),
+                        color: Colors.grey[850],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2.0, 2.0),
+                            blurRadius: 1.0,
+                          ),
+                        ]
+                      ),
+                    ),
                   )
                 ],
               ),
