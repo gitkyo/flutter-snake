@@ -46,21 +46,25 @@ class _GameState extends State<Game> {
             if (event.isKeyPressed(LogicalKeyboardKey.arrowDown)) {
               setState(() {
                 _direction = Direction.DOWN;
+                print("Direction.DOWN");
               });
             }
             if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
               setState(() {
                 _direction = Direction.UP;
+                print("Direction.UP");
               });
             }
             if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
               setState(() {
                 _direction = Direction.LEFT;
+                print("Direction.left");
               });
             }
             if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
               setState(() {
                 _direction = Direction.RIGHT;
+                print("Direction.Right");
               });
             }
           }
@@ -118,7 +122,7 @@ class _GameState extends State<Game> {
                     ),
                   ),
                   GestureDetector(
-                    onPanUpdate: (details){
+                    onPanUpdate: (details) {
                       if (details.delta.dx < 0) {
                         setState(() {
                           _direction = Direction.LEFT;
@@ -144,26 +148,28 @@ class _GameState extends State<Game> {
                       height: 300,
                       width: 300,
                       child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("Swipe to move", style: TextStyle(fontSize: 20.0, color: Colors.white),),
-                            Image.asset("assets/arrows.png", width: 30.0, height: 30.0)
-                          ]
-                        )
-                      ),
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                            Text(
+                              "Swipe to move",
+                              style: TextStyle(
+                                  fontSize: 20.0, color: Colors.white),
+                            ),
+                            Image.asset("assets/arrows.png",
+                                width: 30.0, height: 30.0)
+                          ])),
                       decoration: BoxDecoration(
-                        border: Border.all(width: 1.0),
-                        borderRadius: BorderRadius.circular(5.0),
-                        color: Colors.grey[850],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(2.0, 2.0),
-                            blurRadius: 1.0,
-                          ),
-                        ]
-                      ),
+                          border: Border.all(width: 1.0),
+                          borderRadius: BorderRadius.circular(5.0),
+                          color: Colors.grey[850],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(2.0, 2.0),
+                              blurRadius: 1.0,
+                            ),
+                          ]),
                     ),
                   )
                 ],
