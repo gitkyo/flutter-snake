@@ -40,157 +40,164 @@ class _GameState extends State<Game> {
   @override
   Widget build(BuildContext context) {
     return RawKeyboardListener(
-      focusNode: FocusNode(),
-      onKey: (RawKeyEvent event) {
-        if (event.runtimeType.toString() == 'RawKeyDownEvent')
-        {
-          if (event.isKeyPressed(LogicalKeyboardKey.arrowDown))
-            {
+        focusNode: FocusNode(),
+        onKey: (RawKeyEvent event) {
+          if (event.runtimeType.toString() == 'RawKeyDownEvent') {
+            if (event.isKeyPressed(LogicalKeyboardKey.arrowDown)) {
               setState(() {
                 _direction = Direction.DOWN;
               });
             }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowUp))
-            {
+            if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
               setState(() {
                 _direction = Direction.UP;
               });
             }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft))
-            {
+            if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
               setState(() {
                 _direction = Direction.LEFT;
               });
             }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowRight))
-            {
+            if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
               setState(() {
                 _direction = Direction.RIGHT;
               });
             }
-        }
-      },
-      autofocus: true,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          Container(
-            width: 320,
-            height: 320,
-            padding: EdgeInsets.all(29),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/snake_bg.png"),
-                fit: BoxFit.fill,
+          }
+        },
+        autofocus: true,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              width: 320,
+              height: 320,
+              padding: EdgeInsets.all(29),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/snake_bg.png"),
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-            /*
+              /*
             * gestion de la détection d'évènements de gesture
             * https://flutter.dev/docs/development/ui/advanced/gestures
             */
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTapUp: (tapUpDetails) {
-                _handleTap(tapUpDetails);
-              },
-              child: _getChildBasedOnGameState(),
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTapUp: (tapUpDetails) {
+                  _handleTap(tapUpDetails);
+                },
+                child: _getChildBasedOnGameState(),
+              ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 20.0, right: 20.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
-                  width: 100,
-                  height: 100,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1.0, color: Colors.red),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: Text(
-                    "Score\n$score",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
+            Padding(
+              padding: EdgeInsets.only(left: 20.0, right: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        border: Border.all(width: 1.0),
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.red[400],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2.0, 2.0),
+                            blurRadius: 1.0,
+                          ),
+                        ]),
+                    child: Text(
+                      "Your score:\n$score",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),
                   ),
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(right: 50),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            _direction = Direction.UP;
-                          });
-                        },
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.green),
-                        ),
-                        child: Icon(Icons.keyboard_arrow_up),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[
+                  Column(
+                    children: [
+                      Row(children: [
+                        Container(width: 50, height: 50),
                         ElevatedButton(
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all(
+                                  EdgeInsets.all(20.0)),
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.blue[600]),
+                              elevation: MaterialStateProperty.all(5.0)),
                           onPressed: () {
                             setState(() {
-                              _direction = Direction.LEFT;
+                              _direction = Direction.UP;
                             });
                           },
-                          style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.yellow),
-                          ),
-                          child: Icon(Icons.keyboard_arrow_left),
+                          child: Icon(Icons.keyboard_arrow_up),
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 10),
-                          child: ElevatedButton(
+                        Container(width: 50, height: 50)
+                      ]),
+                      Row(
+                        children: [
+                          ElevatedButton(
+                            style: ButtonStyle(
+                                padding: MaterialStateProperty.all(
+                                    EdgeInsets.all(20.0)),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.blue[600]),
+                                elevation: MaterialStateProperty.all(5.0)),
+                            onPressed: () {
+                              setState(() {
+                                _direction = Direction.LEFT;
+                              });
+                            },
+                            child: Icon(Icons.keyboard_arrow_left),
+                          ),
+                          Container(
+                            width: 50,
+                            height: 50,
+                          ),
+                          ElevatedButton(
+                            style: ButtonStyle(
+                                padding: MaterialStateProperty.all(
+                                    EdgeInsets.all(20.0)),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.blue[600]),
+                                elevation: MaterialStateProperty.all(5.0)),
                             onPressed: () {
                               setState(() {
                                 _direction = Direction.RIGHT;
                               });
                             },
-                            style: ButtonStyle(
-                              backgroundColor:
-                                  MaterialStateProperty.all<Color>(Colors.yellow),
-                            ),
                             child: Icon(Icons.keyboard_arrow_right),
                           ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 50),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            _direction = Direction.DOWN;
-                          });
-                        },
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.green),
-                        ),
-                        child: Icon(Icons.keyboard_arrow_down),
+                        ],
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                      Row(children: [
+                        Container(width: 50, height: 50),
+                        ElevatedButton(
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all(
+                                  EdgeInsets.all(20.0)),
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.blue[600]),
+                              elevation: MaterialStateProperty.all(5.0)),
+                          onPressed: () {
+                            setState(() {
+                              _direction = Direction.DOWN;
+                            });
+                          },
+                          child: Icon(Icons.keyboard_arrow_down),
+                        ),
+                        Container(width: 50, height: 50)
+                      ]),
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
-        ],
-      )
-    );
+          ],
+        ));
   }
 
   /*
@@ -302,7 +309,7 @@ class _GameState extends State<Game> {
             child: Text(
               "You Scored: $score\nTap to play again!",
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.red),
+              style: TextStyle(color: Colors.white, fontSize: 30.0),
             ),
           ),
         );

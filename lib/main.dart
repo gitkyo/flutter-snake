@@ -28,9 +28,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Snake Game example"),
+        backgroundColor: Colors.grey[850],
         centerTitle: true,
       ),
-      backgroundColor: Colors.brown[500],
+      backgroundColor: Colors.grey[800],
       //body attend un widget donc appelle Game() un widget créer dans le fichier game.dart
       body: Game(),
     );

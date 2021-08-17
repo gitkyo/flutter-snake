@@ -8,7 +8,7 @@ final Widget gameStartChild = Container(
     child: Text(
       "Tap to start the Game!\nDo not Touch Walls:)",
       textAlign: TextAlign.center,
-      style: TextStyle(color: Colors.blue),
+      style: TextStyle(color: Colors.white, fontSize: 30.0),
     ),
   ),
 );
@@ -17,18 +17,20 @@ final Widget gameRunningChild = Container(
   width: 15.5,
   height: 15.5,
   decoration: new BoxDecoration(
-    color: const Color(0xFFFF0000),
+    color: const Color(0xff1cff40),
     shape: BoxShape.rectangle,
   ),
 );
 
 final Widget newSnakePointInGame = Container(
-  width: 15.5,
-  height: 15.5,
+  width: 20.0,
+  height: 20.0,
+  
   decoration: new BoxDecoration(
-    color: const Color(0xFF0080FF),
-    border: new Border.all(color: Colors.white),
-    borderRadius: BorderRadius.circular(20),
+    // color: const Color(0xff1cff40),
+    // border: new Border.all(color: Colors.white),
+    // borderRadius: BorderRadius.circular(20),
+    image: DecorationImage(image: AssetImage("assets/apple.png"), fit: BoxFit.cover)
   ),
 );
 
