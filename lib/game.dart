@@ -50,20 +50,17 @@ class _GameState extends State<Game> {
               _direction = Direction.DOWN;
               print("Direction.DOWN");
             });
-          }
-          if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
+          } else if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
             setState(() {
               _direction = Direction.UP;
               print("Direction.UP");
             });
-          }
-          if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
+          } else if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
             setState(() {
               _direction = Direction.LEFT;
               print("Direction.left");
             });
-          }
-          if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
+          } else if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
             setState(() {
               _direction = Direction.RIGHT;
               print("Direction.Right");
