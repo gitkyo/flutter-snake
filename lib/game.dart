@@ -72,6 +72,29 @@ class _GameState extends State<Game> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
+            Center(
+              child: Container(
+                width: 200,
+                height: 100,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    border: Border.all(width: 1.0),
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.red[400],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 1.0,
+                      ),
+                    ]),
+                child: Text(
+                  "Your score:\n$score",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                ),
+              ),
+            ),
             Container(
               width: 320,
               height: 320,
@@ -96,30 +119,9 @@ class _GameState extends State<Game> {
             ),
             Padding(
               padding: EdgeInsets.only(left: 20.0, right: 20.0),
-              child: Row(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Container(
-                    width: 100,
-                    height: 100,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        border: Border.all(width: 1.0),
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.red[400],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(2.0, 2.0),
-                            blurRadius: 1.0,
-                          ),
-                        ]),
-                    child: Text(
-                      "Your score:\n$score",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white, fontSize: 20.0),
-                    ),
-                  ),
                   GestureDetector(
                     onPanUpdate: (details) {
                       if (details.delta.dx < 0) {
@@ -145,18 +147,23 @@ class _GameState extends State<Game> {
                     },
                     child: Container(
                       height: 300,
-                      width: 300,
+                      // width: ,
                       child: Center(
                           child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                             Text(
-                              "Swipe to move",
+                              "Swipe to moves",
                               style: TextStyle(
                                   fontSize: 20.0, color: Colors.white),
                             ),
                             Image.asset("assets/arrows.png",
-                                width: 30.0, height: 30.0)
+                                width: 30.0, height: 30.0),
+                            Text(
+                              "Or use arrow on keyboad",
+                              style: TextStyle(
+                                  fontSize: 20.0, color: Colors.white),
+                            ),
                           ])),
                       decoration: BoxDecoration(
                           border: Border.all(width: 1.0),
