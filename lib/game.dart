@@ -42,7 +42,9 @@ class _GameState extends State<Game> {
     return RawKeyboardListener(
         focusNode: FocusNode(),
         onKey: (RawKeyEvent event) {
+          print("la");
           if (event.runtimeType.toString() == 'RawKeyDownEvent') {
+            print("ici");
             if (event.isKeyPressed(LogicalKeyboardKey.arrowDown)) {
               setState(() {
                 _direction = Direction.DOWN;
