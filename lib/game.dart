@@ -42,34 +42,34 @@ class _GameState extends State<Game> {
     return RawKeyboardListener(
         focusNode: FocusNode(),
         onKey: (RawKeyEvent event) {
-          print("la");
-          if (event.runtimeType.toString() == 'RawKeyDownEvent') {
-            print("ici");
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowDown)) {
-              setState(() {
-                _direction = Direction.DOWN;
-                print("Direction.DOWN");
-              });
-            }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
-              setState(() {
-                _direction = Direction.UP;
-                print("Direction.UP");
-              });
-            }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
-              setState(() {
-                _direction = Direction.LEFT;
-                print("Direction.left");
-              });
-            }
-            if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
-              setState(() {
-                _direction = Direction.RIGHT;
-                print("Direction.Right");
-              });
-            }
+          print("ça passe la");
+          // if (event.runtimeType.toString() == 'RawKeyDownEvent') {
+          print("mais pas ici");
+          if (event.isKeyPressed(LogicalKeyboardKey.arrowDown)) {
+            setState(() {
+              _direction = Direction.DOWN;
+              print("Direction.DOWN");
+            });
           }
+          if (event.isKeyPressed(LogicalKeyboardKey.arrowUp)) {
+            setState(() {
+              _direction = Direction.UP;
+              print("Direction.UP");
+            });
+          }
+          if (event.isKeyPressed(LogicalKeyboardKey.arrowLeft)) {
+            setState(() {
+              _direction = Direction.LEFT;
+              print("Direction.left");
+            });
+          }
+          if (event.isKeyPressed(LogicalKeyboardKey.arrowRight)) {
+            setState(() {
+              _direction = Direction.RIGHT;
+              print("Direction.Right");
+            });
+          }
+          // }
         },
         autofocus: true,
         child: Column(
